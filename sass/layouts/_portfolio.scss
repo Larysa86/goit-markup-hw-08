@@ -1,7 +1,17 @@
 /* Секція Портфоліо */
 
 .portfolio {
-    @extend %section
+    padding-top: 40px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+    padding-top: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    padding-top: 50px;
+    padding-bottom: 94px;
+    }
 }
 
 /* Кнопки */
@@ -63,8 +73,16 @@
 }
 
 .projects-list {
+    --items: 1;
+    @media screen and (min-width: 768px) {
+    --items: 2;
+    }
+    
+    @media screen and (min-width: 1200px) {
     --items: 3;
+     }
 }
+
 
 .projects-list-item {
     border: 1px solid rgba(238, 238, 238, 1);

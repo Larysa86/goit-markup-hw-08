@@ -1,12 +1,27 @@
 /* Секція Наша команда */
 
 .team {
-    @extend %section;
-    
     background-color: var(--secondary-background-color);
+    padding-top: 0;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+    padding-top: 0;
+    padding-bottom: 94px;
+    }
 }
 
+.team__list {
+    --items: 1;
 
+    @media screen and (min-width: 768px) {
+    --items: 2;
+    }
+
+    @media screen and (min-width: 1200px) {
+    --items: 4;
+    }
+}
 .team__item {
     text-align: center;
 

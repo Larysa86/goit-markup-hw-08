@@ -31,11 +31,6 @@
   overflow: hidden;
 }
 
-.portfolio, .team, .clients, .benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 body {
   background-color: var(--background-color);
   color: var(--primary-text-color);
@@ -66,8 +61,8 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .job__title,
@@ -145,11 +140,26 @@ img {
 }
 
 .container {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 /* Сітка із застосуванням Flex-box */
@@ -219,7 +229,7 @@ img {
 .projects-overlay {
   position: absolute;
   width: 100%;
-  height: 294px;
+  height: 100%;
   top: 0;
   left: 0;
   -webkit-transform: translateY(100%);
@@ -522,6 +532,31 @@ img {
 }
 
 /* Секція Переваги */
+.benefits {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.benefits__list {
+  --items: 1;
+}
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__list {
+    --items: 4;
+  }
+}
+
 .benefits__item::before {
   display: block;
   content: "";
@@ -556,14 +591,40 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
 }
+@media screen and (max-width: 767px) {
+  .benefits__title {
+    text-align: center;
+  }
+}
 
 .benefits__text {
   line-height: 1.71;
 }
 
 /* Cекція Постійні клієнти */
+.clients {
+  padding-top: 0;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
+}
+
 .clients__list {
-  --items: 6;
+  --items: 2;
+}
+@media screen and (min-width: 768px) {
+  .clients__list {
+    --items: 3;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    --items: 6;
+  }
 }
 
 .clients__link {
@@ -576,7 +637,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -884,6 +944,28 @@ img {
 /* Секція Наша команда */
 .team {
   background-color: var(--secondary-background-color);
+  padding-top: 0;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
+}
+
+.team__list {
+  --items: 1;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    --items: 4;
+  }
 }
 
 .team__item {
@@ -916,6 +998,22 @@ img {
 }
 
 /* Секція Портфоліо */
+.portfolio {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio {
+    padding-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 50px;
+    padding-bottom: 94px;
+  }
+}
+
 /* Кнопки */
 .portfolio-list {
   display: -webkit-box;
@@ -972,7 +1070,17 @@ img {
 }
 
 .projects-list {
-  --items: 3;
+  --items: 1;
+}
+@media screen and (min-width: 768px) {
+  .projects-list {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects-list {
+    --items: 3;
+  }
 }
 
 .projects-list-item {

@@ -1,7 +1,26 @@
 /* Секція Переваги */
 
 .benefits {
-    @extend %section
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+}
+
+.benefits__list {
+    --items: 1;
+
+    @media screen and (min-width: 768px) {
+        --items: 2;
+    }
+
+    @media screen and (min-width: 1200px) {
+        --items: 4;
+    }
+
 }
 
 
@@ -41,6 +60,10 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+    text-align: center;
+    }
 }
 
 .benefits__text {

@@ -1,11 +1,25 @@
 /* Cекція Постійні клієнти */
 
 .clients {
-    @extend %section
+    padding-top: 0;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+    padding-top: 0;
+    padding-bottom: 94px;
+    }
 }
 
 .clients__list {
+    --items: 2;
+
+    @media screen and (min-width: 768px) {
+    --items: 3;
+    }
+
+    @media screen and (min-width: 1200px) {
     --items: 6;
+    }
 }
 
 
@@ -13,7 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    // width: 170px;
     height: 92px;
 
     border: 1px solid #afb1b8;
