@@ -1,0 +1,29 @@
+/* Оверлей */
+
+.projects-overlay {
+    position: absolute;
+    width: 100%;
+    height: 294px;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transition: transform var(--anim); 
+}
+
+.projects-link:hover .projects-overlay {
+    transform: translateY(0);
+}
+
+.overlay-text {
+    display: block;
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}

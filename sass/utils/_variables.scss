@@ -1,0 +1,22 @@
+:root {
+
+    /* Кольори тексту */
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --secondary-title-color: #ffffff;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+    /* Кольори фону */
+    --background-color: #ffffff;
+    --secondary-background-color: #f5f4fa;
+    --third-background-color: #2f303a;
+
+    /* Акцентні кольори */
+    --accent-color: #2196f3;
+
+
+    /* Інше */
+    --items: 4;
+    --indent: 30px;
+    --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+}

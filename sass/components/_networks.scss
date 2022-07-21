@@ -1,0 +1,30 @@
+.networks-list {
+    display: flex;
+
+    justify-content: center;
+    gap: 10px;
+}
+
+.networks-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+
+    color: #afb1b8;
+
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    }
+    
+    transition: color var(--anim), background-color var(--anim);
+}
+
+
+.networks-list__icon {
+    fill: currentColor;
+}

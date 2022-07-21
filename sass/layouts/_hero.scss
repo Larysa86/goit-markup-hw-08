@@ -1,0 +1,29 @@
+/* Секція Герой */
+
+.hero {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/Img.jpg');
+
+    padding: 200px 0;
+    background-color: var(--third-background-color);
+    text-align: center;
+}
+
+.hero__title {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
+
+    color: var(--secondary-title-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
