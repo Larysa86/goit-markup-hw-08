@@ -12,6 +12,12 @@
     @media screen and (min-width: 768px) and (max-width: 1200px) {
         display: none;
     }
+
+    &:hover .mobile-menu-close {
+    fill: var(--accent-color);
+    }
+    
+    transition: fill var(--anim);
 }
 
 .mobile-menu-burger {

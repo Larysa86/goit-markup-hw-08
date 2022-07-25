@@ -30,22 +30,68 @@
 
 		<header class="header">
 			<div class="container header__container">
+				<!-- Логотип -->
+
+				<a class="logo link" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
+				<button class="mobile-menu-btn" type="button" data-menu-button>
+					<svg class="mobile-menu-icon" width="24" height="16">
+						<use class="mobile-menu-burger" href="./images/icons.svg#icon-menu"></use>
+						<use class="mobile-menu-close" href="./images/icons.svg#close-menu"></use>
+					</svg>
+				</button>
+
+				<!-- Мобільне меню -->
+
+				<div class="mobile-menu" data-menu>
+					<ul class="mobile-menu-nav list">
+						<li class="mobile-menu-nav-item">
+							<a class="mobile-menu-nav-link link" href="./index.html">Студія </a>
+						</li>
+						<li class="mobile-menu-nav-item">
+							<a class="mobile-menu-nav-link link current" href="./portfolio.html">Портфоліо</a>
+						</li>
+						<li class="mobile-menu-nav-item">
+							<a class="mobile-menu-nav-link link" href="">Контакти</a>
+						</li>
+					</ul>
+
+					<ul class="mobile-menu-contacts list">
+						<li class="mobile-menu-contacts-item">
+							<a class="mobile-menu-contacts-link link accent" href=""> +38 096 111 11 11 </a>
+						</li>
+						<li class="mobile-menu-contacts-item">
+							<a class="mobile-menu-contacts-link link" href="">info@devstudio.com</a>
+						</li>
+					</ul>
+
+					<ul class="mobile-menu-socials list">
+						<li class="mobile-menu-socials-item">
+							<a class="mobile-menu-socials-link link" href=""> Instagram </a>
+						</li>
+						<li class="mobile-menu-socials-item">
+							<a class="mobile-menu-socials-link link" href="">Twitter</a>
+						</li>
+						<li class="mobile-menu-socials-item">
+							<a class="mobile-menu-socials-link link" href="">Facebook</a>
+						</li>
+						<li class="mobile-menu-socials-item">
+							<a class="mobile-menu-socials-link link" href="">LinkedIn</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Навігація на інші сторінки -->
+
 				<nav class="nav">
-					<!-- Логотип -->
-
-					<a class="logo link" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
-
-					<!-- Навігація на інші сторінки -->
-
 					<ul class="nav__list list">
 						<li class="nav__item">
-							<a class="nav__link link" href="./index.html">Студия</a>
+							<a class="nav__link nav__link--current link" href="./index.html">Студія</a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link nav__link--current link" href="./portfolio.html">Портфолио</a>
+							<a class="nav__link link" href="./portfolio.html">Портфоліо</a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link link" href="Контакты">Контакты</a>
+							<a class="nav__link link" href="Контакты">Контакти</a>
 						</li>
 					</ul>
 				</nav>
@@ -83,23 +129,23 @@
 
 					<!-- Кнопки -->
 
-					<!-- <ul class="portfolio-list list">
-						<li class="button-list-item">
+					<ul class="portfolio-list list">
+						<li class="portfolio-list-item">
 							<button class="button-list active" type="button">Все</button>
 						</li>
-						<li class="button-list-item">
+						<li class="portfolio-list-item">
 							<button class="button-list" type="button">Веб-сайты</button>
 						</li>
-						<li class="button-list-item">
+						<li class="portfolio-list-item">
 							<button class="button-list" type="button">Приложения</button>
 						</li>
-						<li class="button-list-item">
+						<li class="portfolio-list-item">
 							<button class="button-list" type="button">Дизайн</button>
 						</li>
-						<li class="button-list-item">
+						<li class="portfolio-list-item">
 							<button class="button-list" type="button">Маркетинг</button>
 						</li>
-					</ul> -->
+					</ul>
 
 					<!-- Проекти -->
 
@@ -111,8 +157,8 @@
 
 									<div class="projects-overlay">
 										<p class="overlay-text">
-											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-											позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
 									</div>
 								</div>
@@ -133,8 +179,8 @@
 									/>
 									<div class="projects-overlay">
 										<p class="overlay-text">
-											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-											позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
 									</div>
 								</div>
@@ -150,14 +196,14 @@
 									<img src="./images/portfolio/img-3.jpg" alt="Ресторан Seafood" width="370" height="294" />
 									<div class="projects-overlay">
 										<p class="overlay-text">
-											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-											позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
 									</div>
 								</div>
 								<div class="img-content">
 									<h2 class="projects-title">Ресторан Seafood</h2>
-									<p class="projects-text">Приложение</p>
+									<p class="projects-text">Додаток</p>
 								</div>
 							</a>
 						</li>
@@ -167,8 +213,8 @@
 									<img src="./images/portfolio/img-4.jpg" alt="Проект Prime" width="370" height="294" />
 									<div class="projects-overlay">
 										<p class="overlay-text">
-											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-											позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
 									</div>
 								</div>
@@ -184,14 +230,14 @@
 									<img src="./images/portfolio/img-5.jpg" alt="Проект Boxes" width="370" height="294" />
 									<div class="projects-overlay">
 										<p class="overlay-text">
-											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-											позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
 									</div>
 								</div>
 								<div class="img-content">
 									<h2 class="projects-title">Проект Boxes</h2>
-									<p class="projects-text">Приложение</p>
+									<p class="projects-text">Додаток</p>
 								</div>
 							</a>
 						</li>
@@ -201,8 +247,8 @@
 									<img src="./images/portfolio/img-6.jpg" alt="Inspiration has no Borders" width="370" height="294" />
 									<div class="projects-overlay">
 										<p class="overlay-text">
-											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-											позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
 									</div>
 								</div>
@@ -218,13 +264,13 @@
 									<img src="./images/portfolio/img-7.jpg" alt="Издание Limited Edition" width="370" height="294" />
 									<div class="projects-overlay">
 										<p class="overlay-text">
-											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-											позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
 									</div>
 								</div>
 								<div class="img-content">
-									<h2 class="projects-title">Издание Limited Edition</h2>
+									<h2 class="projects-title">Виданння Limited Edition</h2>
 									<p class="projects-text">Дизайн</p>
 								</div>
 							</a>
@@ -235,8 +281,8 @@
 									<img src="./images/portfolio/img-8.jpg" alt="Проект LAB" width="370" height="294" />
 									<div class="projects-overlay">
 										<p class="overlay-text">
-											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-											позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
 									</div>
 								</div>
@@ -252,14 +298,14 @@
 									<img src="./images/portfolio/img-9.jpg" alt="Growing Business" width="370" height="294" />
 									<div class="projects-overlay">
 										<p class="overlay-text">
-											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-											позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
 										</p>
 									</div>
 								</div>
 								<div class="img-content">
 									<h2 class="projects-title">Growing Business</h2>
-									<p class="projects-text">Приложение</p>
+									<p class="projects-text">Додаток</p>
 								</div>
 							</a>
 						</li>
@@ -373,5 +419,9 @@
 				</form>
 			</div>
 		</footer> -->
+
+		<!-- Підключення скрипта -->
+
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>
