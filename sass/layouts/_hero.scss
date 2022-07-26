@@ -1,29 +1,84 @@
 /* Секція Герой */
-
 .hero {
+    position: relative;
     max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/Img.jpg');
-
-    padding: 200px 0;
-    background-color: var(--third-background-color);
+    margin: 0 auto;
+    padding: 118px 0;
+    
     text-align: center;
+    background-color: var(--third-background-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(../images/hero/img_sm.jpg);
+
+                // Для ретіна екранів(мобільний)
+
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)), url(../images/hero/img_sm@2x.jpg);
+        }
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url(../images/hero/img_md.jpg);
+
+                // Для ретіна екранів(планшет)
+
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), url(../images/hero/img_md@2x.jpg);
+            }
+        }
+
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url(../images/hero/img_lg.jpg);
+
+
+                // Для ретіна екранів(десктоп)
+                
+                    @media (min-device-pixel-ratio: 2),
+                    (-webkit-min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+                                rgba(47, 48, 58, 0.4)), url(../../images/hero/img_lg@2x.jpg);
+                    }
+        }
+
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0;
+    }
 }
 
 .hero__title {
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 696px;
+    width: 360px;
 
     color: var(--secondary-title-color);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        width: 696px;
+
+        }
+
 }

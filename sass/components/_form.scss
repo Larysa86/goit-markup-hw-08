@@ -12,6 +12,14 @@
     background-color: rgba(0, 0, 0, 0.2);
 
     transition: opacity var(--anim), visibility var(--anim); 
+
+    // @media screen and (min-width: 480px) {
+    //    padding: 94px 15px; 
+    // }
+
+    // @media screen and (min-width: 480px) {
+    //     padding: 208px 159px;
+    // }
 }
 
 .backdrop.is-hidden {
