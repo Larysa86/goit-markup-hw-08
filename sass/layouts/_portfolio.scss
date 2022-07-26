@@ -103,6 +103,10 @@
 .img-content {
     padding: 20px 24px;
     flex-grow: 1;
+
+   border-left: 1px solid rgba(238, 238, 238, 1);
+   border-right: 1px solid rgba(238, 238, 238, 1);
+   border-bottom: 1px solid rgba(238, 238, 238, 1);
 }
 
 .projects-link {
@@ -122,10 +126,4 @@
 .img-card {
     position: relative;
     overflow: hidden;
-}
-
-.img-content {
-    border-left: 1px solid rgba(238, 238, 238, 1);
-    border-right: 1px solid rgba(238, 238, 238, 1);
-    border-bottom: 1px solid rgba(238, 238, 238, 1);
 }

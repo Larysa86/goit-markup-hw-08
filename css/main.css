@@ -61,8 +61,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 .job__title,
@@ -1377,6 +1377,9 @@ img {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  border-left: 1px solid rgb(238, 238, 238);
+  border-right: 1px solid rgb(238, 238, 238);
+  border-bottom: 1px solid rgb(238, 238, 238);
 }
 
 .projects-link {
@@ -1401,10 +1404,4 @@ img {
 .img-card {
   position: relative;
   overflow: hidden;
-}
-
-.img-content {
-  border-left: 1px solid rgb(238, 238, 238);
-  border-right: 1px solid rgb(238, 238, 238);
-  border-bottom: 1px solid rgb(238, 238, 238);
 }/*# sourceMappingURL=main.css.map */

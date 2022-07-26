@@ -177,6 +177,7 @@
 									width="370"
 									height="294"
 								/>
+
 								<p class="job__lable">Десктопні додатки</p>
 							</div>
 						</li>
@@ -216,22 +217,44 @@
 					<ul class="team__list card-set list">
 						<li class="team__item card-set__item">
 							<div class="team__card">
-								<img
-									class="team__img"
-									srcset="
-										./images/teams/w/img-1_354.jpg 354w,
-										./images/teams/w/img-1_450.jpg 450w,
-										./images/teams/w/img-1_540.jpg 540w,
-										./images/teams/w/img-1_708.jpg 708w,
-										./images/teams/w/img-1_810.jpg 810w,
-										./images/teams/w/img-1_900.jpg 900w
-									"
-									sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
-									src="./images/teams/img-1_sm.jpg"
-									alt="Игор Дем'яненко"
-									width="450"
-									height="460"
-								/>
+								<picture>
+									<!-- Десктоп -->
+									<source
+										media="(min-width: 1200px)"
+										srcset="./images/teams/img-1_lg.webp 1x, ./images/teams/img-1_lg@2x.webp 2x"
+										type="image/webp"
+									/>
+									<source
+										media="(min-width: 1200px)"
+										srcset="./images/teams/img-1_lg.jpg 1x, ./images/teams/img-1_lg@2x.jpg 2x"
+										type="image/jpg"
+									/>
+
+									<!-- Планшет -->
+									<source
+										media="(min-width: 768px)"
+										srcset="./images/teams/img-1_md.webp 1x, ./images/teams/img-1_md@2x.webp 2x"
+										type="image/webp"
+									/>
+									<source
+										media="(min-width: 768px)"
+										srcset="./images/teams/img-1_md.jpg 1x, ./images/teams/img-1_md@2x.jpg 2x"
+										type="image/jpg"
+									/>
+
+									<!-- Мобільний -->
+									<source
+										media="(max-width: 767px)"
+										srcset="./images/teams/img-1_sm.webp 1x, ./images/teams/img-1_sm@2x.webp 2x"
+										type="image/webp"
+									/>
+									<source
+										media="(max-width: 767px)"
+										srcset="./images/teams/img-1_sm.jpg 1x, ./images/teams/img-1_sm@2x.jpg 2x"
+										type="image/jpg"
+									/>
+									<img src="./images/teams/img-1_sm.jpg" alt="Игор Дем'яненко" width="450" height="460" />
+								</picture>
 								<div class="team__content">
 									<h3 class="team__member">Игор Дем'яненко</h3>
 									<p class="team__position">Product Designer</p>
@@ -295,22 +318,44 @@
 
 						<li class="team__item card-set__item">
 							<div class="team__card">
-								<img
-									srcset="
-										./images/teams/w/img-2_354.jpg 354w,
-										./images/teams/w/img-2_450.jpg 450w,
-										./images/teams/w/img-2_540.jpg 540w,
-										./images/teams/w/img-2_708.jpg 708w,
-										./images/teams/w/img-2_810.jpg 810w,
-										./images/teams/w/img-2_900.jpg 900w
-									"
-									sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
-									src="./images/teams/img-2_sm.jpg"
-									alt="Ольга Рєпіна"
-									width="450"
-									height="460"
-								/>
+								<picture>
+									<!-- Десктоп -->
+									<source
+										media="(min-width: 1200px)"
+										srcset="./images/teams/img-2_lg.webp 1x, ./images/teams/img-2_lg@2x.webp 2x"
+										type="image/webp"
+									/>
+									<source
+										media="(min-width: 1200px)"
+										srcset="./images/teams/img-2_lg.jpg 1x, ./images/teams/img-2_lg@2x.jpg 2x"
+										type="image/jpg"
+									/>
 
+									<!-- Планшет -->
+									<source
+										media="(min-width: 768px)"
+										srcset="./images/teams/img-2_md.webp 1x, ./images/teams/img-2_md@2x.webp 2x"
+										type="image/webp"
+									/>
+									<source
+										media="(min-width: 768px)"
+										srcset="./images/teams/img-2_md.jpg 1x, ./images/teams/img-2_md@2x.jpg 2x"
+										type="image/jpg"
+									/>
+
+									<!-- Мобільний -->
+									<source
+										media="(max-width: 767px)"
+										srcset="./images/teams/img-2_sm.webp 1x, ./images/teams/img-2_sm@2x.webp 2x"
+										type="image/webp"
+									/>
+									<source
+										media="(max-width: 767px)"
+										srcset="./images/teams/img-2_sm.jpg 1x, ./images/teams/img-2_sm@2x.jpg 2x"
+										type="image/jpg"
+									/>
+									<img src="./images/teams/img-2_sm.jpg" alt="Ольга Рєпіна" width="450" height="460" />
+								</picture>
 								<div class="team__content">
 									<h3 class="team__member">Ольга Рєпіна</h3>
 									<p class="team__position">Frontend Developer</p>
@@ -374,22 +419,44 @@
 
 						<li class="team__item card-set__item">
 							<div class="team__card">
-								<img
-									srcset="
-										./images/teams/w/img-3_354.jpg 354w,
-										./images/teams/w/img-3_450.jpg 450w,
-										./images/teams/w/img-3_540.jpg 540w,
-										./images/teams/w/img-3_708.jpg 708w,
-										./images/teams/w/img-3_810.jpg 810w,
-										./images/teams/w/img-3_900.jpg 900w
-									"
-									sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
-									src="./images/teams/img-3_sm.jpg"
-									alt="Микола Тарасов"
-									width="450"
-									height="460"
-								/>
+								<picture>
+									<!-- Десктоп -->
+									<source
+										media="(min-width: 1200px)"
+										srcset="./images/teams/img-3_lg.webp 1x, ./images/teams/img-3_lg@2x.webp 2x"
+										type="image/webp"
+									/>
+									<source
+										media="(min-width: 1200px)"
+										srcset="./images/teams/img-3_lg.jpg 1x, ./images/teams/img-3_lg@2x.jpg 2x"
+										type="image/jpg"
+									/>
 
+									<!-- Планшет -->
+									<source
+										media="(min-width: 768px)"
+										srcset="./images/teams/img-3_md.webp 1x, ./images/teams/img-3_md@2x.webp 2x"
+										type="image/webp"
+									/>
+									<source
+										media="(min-width: 768px)"
+										srcset="./images/teams/img-3_md.jpg 1x, ./images/teams/img-3_md@2x.jpg 2x"
+										type="image/jpg"
+									/>
+
+									<!-- Мобільний -->
+									<source
+										media="(max-width: 767px)"
+										srcset="./images/teams/img-3_sm.webp 1x, ./images/teams/img-3_sm@2x.webp 2x"
+										type="image/webp"
+									/>
+									<source
+										media="(max-width: 767px)"
+										srcset="./images/teams/img-3_sm.jpg 1x, ./images/teams/img-3_sm@2x.jpg 2x"
+										type="image/jpg"
+									/>
+									<img src="./images/teams/img-3_sm.jpg" alt="Микола Тарасов" width="450" height="460" />
+								</picture>
 								<div class="team__content">
 									<h3 class="team__member">Микола Тарасов</h3>
 									<p class="team__position">Marketing</p>
@@ -453,22 +520,44 @@
 
 						<li class="team__item card-set__item">
 							<div class="team__card">
-								<img
-									srcset="
-										./images/teams/w/img-4_354.jpg 354w,
-										./images/teams/w/img-4_450.jpg 450w,
-										./images/teams/w/img-4_540.jpg 540w,
-										./images/teams/w/img-4_708.jpg 708w,
-										./images/teams/w/img-4_810.jpg 810w,
-										./images/teams/w/img-4_900.jpg 900w
-									"
-									sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
-									src="./images/teams/img-4_sm.jpg"
-									alt="Михайло Єрмаков"
-									width="450"
-									height="460"
-								/>
+								<picture>
+									<!-- Десктоп -->
+									<source
+										media="(min-width: 1200px)"
+										srcset="./images/teams/img-4_lg.webp 1x, ./images/teams/img-4_lg@2x.webp 2x"
+										type="image/webp"
+									/>
+									<source
+										media="(min-width: 1200px)"
+										srcset="./images/teams/img-4_lg.jpg 1x, ./images/teams/img-4_lg@2x.jpg 2x"
+										type="image/jpg"
+									/>
 
+									<!-- Планшет -->
+									<source
+										media="(min-width: 768px)"
+										srcset="./images/teams/img-4_md.webp 1x, ./images/teams/img-4_md@2x.webp 2x"
+										type="image/webp"
+									/>
+									<source
+										media="(min-width: 768px)"
+										srcset="./images/teams/img-4_md.jpg 1x, ./images/teams/img-4_md@2x.jpg 2x"
+										type="image/jpg"
+									/>
+
+									<!-- Мобільний -->
+									<source
+										media="(max-width: 767px)"
+										srcset="./images/teams/img-4_sm.webp 1x, ./images/teams/img-4_sm@2x.webp 2x"
+										type="image/webp"
+									/>
+									<source
+										media="(max-width: 767px)"
+										srcset="./images/teams/img-4_sm.jpg 1x, ./images/teams/img-4_sm@2x.jpg 2x"
+										type="image/jpg"
+									/>
+									<img src="./images/teams/img-4_sm.jpg" alt="Михайло Єрмаков" width="450" height="460" />
+								</picture>
 								<div class="team__content">
 									<h3 class="team__member">Михайло Єрмаков</h3>
 									<p class="team__position">UI Designer</p>
