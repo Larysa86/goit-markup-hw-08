@@ -674,7 +674,7 @@ img {
 
 .checkbox-agreement {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.17;
   color: var(--primary-text-color);
   -webkit-user-select: none;
@@ -684,12 +684,21 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .checkbox-agreement {
+    font-size: 14px;
     line-height: 1.71;
   }
 }
 
 .agreement-text {
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .agreement-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .button-submit {

@@ -194,20 +194,28 @@
 
 .checkbox-agreement {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.17;
 
     color: var(--primary-text-color);
     user-select: none;
 
     @media screen and (min-width: 1200px) {
-            line-height: 1.71;
+        font-size: 14px;
+        line-height: 1.71;
         }
 
 }
 
 .agreement-text {
+    font-size: 12px;
+    line-height: 1.17;
     color: var(--accent-color);
+
+    @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
 }
 
 .button-submit {
