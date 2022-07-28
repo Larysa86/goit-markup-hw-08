@@ -1,7 +1,4 @@
 .mobile-menu-btn {
-    position: fixed;
-    top: 0;
-    right: 0;
     background-color: transparent;
     border: none;
     width: 40px;
@@ -23,8 +20,12 @@
     transition: fill var(--anim);
 }
 
+.mobile-menu-icon {
+    position: fixed;
+}
+
 .mobile-menu-burger {
-    transition: 250ms;
+       transition: 250ms;
 
     .mobile-menu-btn.is-open & {
         opacity: 0;
