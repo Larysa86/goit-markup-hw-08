@@ -18,12 +18,22 @@
 
 .overlay-text {
     display: block;
-    padding-top: 63px;
+    padding-top: 77px;
     padding-right: 24px;
-    padding-bottom: 63px;
+    padding-bottom: 77px;
     padding-left: 24px;
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
     color: #ffffff;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 49px;
+        padding-bottom: 77px;
+    }
+
+        @media screen and (min-width: 1200px) {
+            padding-top: 63px;
+            padding-bottom: 63px;
+        }
 }

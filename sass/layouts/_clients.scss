@@ -1,12 +1,20 @@
 /* Cекція Постійні клієнти */
 
 .clients {
-    padding-top: 0;
+    padding-top: 60px;
     padding-bottom: 60px;
 
     @media screen and (min-width: 1200px) {
-    padding-top: 0;
+    padding-top: 94px;
     padding-bottom: 94px;
+    }
+}
+
+.clients__title {
+    margin-bottom: 30px;
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px;
     }
 }
 
