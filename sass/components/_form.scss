@@ -31,25 +31,22 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
-    @media screen and (min-width: 375px) {
-    height: 600px;
-    .form-checkbox {
-    margin-bottom: 15px;
+    
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+     width: 450px;
+     height: 609px;
     }
-    }
 
-    @media screen and (min-width: 480px) {
-            width: 450px;
-        }
-
-    @media screen and (min-width: 768px) {
-            width: 500px;
-        }
-
+   
     @media screen and (min-width: 1200px) {
       width: 528px;
+      height: 590px;
+
 }
 }
+
+
 
 .modal-close-btn {
     position: absolute;
@@ -83,6 +80,19 @@
     display: flex;
     flex-direction: column;
     padding: 40px;
+
+    @media screen and (min-width: 320px) {
+    padding: 20px;
+        }
+
+
+    @media screen and (min-width: 480px) {
+    padding: 35px;
+        }
+
+    @media screen and (min-width: 1200px) {
+    padding: 40px;
+         }
 }
 
 .form-box {
@@ -137,10 +147,7 @@
     position: absolute;
     top: 50%;
     left: 12px;
-
-
     transition: fill var(--anim); 
-
 
 }
 
@@ -181,8 +188,6 @@
     justify-content: center;
     gap: 7px;
     margin-bottom: 30px;
-
-
 }
 
 .custom-checkbox {
