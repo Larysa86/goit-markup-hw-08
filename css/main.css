@@ -213,6 +213,9 @@ img {
 }
 
 .mobile-menu-btn {
+  position: fixed;
+  top: 0;
+  right: 0;
   background-color: transparent;
   border: none;
   width: 40px;
@@ -262,21 +265,21 @@ img {
   top: 0;
   left: 0;
   z-index: 100;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
   width: 100%;
   height: 100%;
   padding: 48px 40px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #fff;
-  -webkit-transition: -webkit-transform 250ms;
-  transition: -webkit-transform 250ms;
-  transition: transform 250ms;
-  transition: transform 250ms, -webkit-transform 250ms;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
 }
 .mobile-menu.is-open {
   -webkit-transform: translateX(0);

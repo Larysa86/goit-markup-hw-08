@@ -1,4 +1,7 @@
 .mobile-menu-btn {
+    position: fixed;
+    top: 0;
+    right: 0;
     background-color: transparent;
     border: none;
     width: 40px;
@@ -42,16 +45,16 @@
     top: 0;
     left: 0;
     z-index: 100;
-    transform: translateX(100%);
     width: 100%;
     height: 100%;
     padding: 48px 40px;
+    transform: translateX(100%);
 
     display: none;
     flex-direction: column;
     background-color: #fff;
 
-    transition: transform 250ms;
+    transition: transform 500ms;
 
     &.is-open {
         transform: translateX(0);
