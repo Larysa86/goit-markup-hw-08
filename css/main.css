@@ -1332,7 +1332,7 @@ img {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  background-color: rgba(47, 48, 58, 0.8);
+  background-color: rgba 47, 48, 58, 0.8;
   color: var(--secondary-title-color);
 }
 
