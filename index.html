@@ -34,52 +34,11 @@
 				<!-- Логотип -->
 
 				<a class="logo link" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
-				<button class="mobile-menu-btn" type="button" data-menu-button>
+				<button class="mobile-menu-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
 					<svg class="mobile-menu-icon" width="24" height="16" aria-label="Мобільне меню">
 						<use class="mobile-menu-burger" href="./images/icons.svg#icon-menu"></use>
-						<use class="mobile-menu-close" href="./images/icons.svg#close-menu"></use>
 					</svg>
 				</button>
-
-				<!-- Мобільне меню -->
-
-				<div class="mobile-menu" data-menu>
-					<ul class="mobile-menu-nav list">
-						<li class="mobile-menu-nav-item">
-							<a class="mobile-menu-nav-link link current" href="./index.html">Студія </a>
-						</li>
-						<li class="mobile-menu-nav-item">
-							<a class="mobile-menu-nav-link link" href="./portfolio.html">Портфоліо</a>
-						</li>
-						<li class="mobile-menu-nav-item">
-							<a class="mobile-menu-nav-link link" href="">Контакти</a>
-						</li>
-					</ul>
-
-					<ul class="mobile-menu-contacts list">
-						<li class="mobile-menu-contacts-item">
-							<a class="mobile-menu-contacts-link link accent" href=""> +38 096 111 11 11 </a>
-						</li>
-						<li class="mobile-menu-contacts-item">
-							<a class="mobile-menu-contacts-link link" href="">info@devstudio.com</a>
-						</li>
-					</ul>
-
-					<ul class="mobile-menu-socials list">
-						<li class="mobile-menu-socials-item">
-							<a class="mobile-menu-socials-link link" href=""> Instagram </a>
-						</li>
-						<li class="mobile-menu-socials-item">
-							<a class="mobile-menu-socials-link link" href="">Twitter</a>
-						</li>
-						<li class="mobile-menu-socials-item">
-							<a class="mobile-menu-socials-link link" href="">Facebook</a>
-						</li>
-						<li class="mobile-menu-socials-item">
-							<a class="mobile-menu-socials-link link" href="">LinkedIn</a>
-						</li>
-					</ul>
-				</div>
 
 				<!-- Навігація на інші сторінки -->
 
@@ -675,9 +634,83 @@
 			</section>
 		</main>
 
+		<!-- Мобільне меню -->
+
+		<div class="menu-container js-menu-container" id="mobile-menu">
+			<button class="mobile-menu-btn js-close-menu" type="button">
+				<svg class="mobile-menu-icon" width="24" height="16">
+					<use class="mobile-menu-close" href="./images/icons.svg#close-menu"></use>
+				</svg>
+			</button>
+			<ul class="mobile-menu-nav list">
+				<li class="mobile-menu-nav-item">
+					<a class="mobile-menu-nav-link link current" href="./index.html">Студія </a>
+				</li>
+				<li class="mobile-menu-nav-item">
+					<a class="mobile-menu-nav-link link" href="./portfolio.html">Портфоліо</a>
+				</li>
+				<li class="mobile-menu-nav-item">
+					<a class="mobile-menu-nav-link link" href="#contacts">Контакти</a>
+				</li>
+			</ul>
+
+			<ul class="mobile-menu-contacts list">
+				<li class="mobile-menu-contacts-item">
+					<a class="mobile-menu-contacts-link link accent" href="tel:+380961111111"> +38 096 111 11 11 </a>
+				</li>
+				<li class="mobile-menu-contacts-item">
+					<a class="mobile-menu-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+				</li>
+			</ul>
+
+			<ul class="mobile-menu-socials list">
+				<li class="mobile-menu-socials-item">
+					<a
+						class="mobile-menu-socials-link link"
+						href="https://www.instagram.com"
+						aria-label="instagram"
+						target="_blank"
+						rel="noreferrer noopener"
+					>
+						Instagram
+					</a>
+				</li>
+				<li class="mobile-menu-socials-item">
+					<a
+						class="mobile-menu-socials-link link"
+						href="https://www.twitter.com"
+						aria-label="twitter"
+						target="_blank"
+						rel="noreferrer noopener"
+						>Twitter</a
+					>
+				</li>
+				<li class="mobile-menu-socials-item">
+					<a
+						class="mobile-menu-socials-link link"
+						href="https://www.facebook.com"
+						aria-label="facebook"
+						target="_blank"
+						rel="noreferrer noopener"
+						>Facebook</a
+					>
+				</li>
+				<li class="mobile-menu-socials-item">
+					<a
+						class="mobile-menu-socials-link link"
+						href="https://www.linkedin.com"
+						aria-label="linkedin"
+						target="_blank"
+						rel="noreferrer noopener"
+						>LinkedIn</a
+					>
+				</li>
+			</ul>
+		</div>
+
 		<!-- Підвал -->
 
-		<footer class="footer">
+		<footer class="footer" id="contacts">
 			<div class="container footer-container">
 				<div class="address-container">
 					<a class="footer-logo link" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
@@ -840,6 +873,12 @@
 		<!-- Підключення скрипта -->
 
 		<script src="./js/modal.js"></script>
-		<script src="./js/mobile-menu.js"></script>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
+		<script defer src="js/mobile-menu.js"></script>
 	</body>
 </html>
